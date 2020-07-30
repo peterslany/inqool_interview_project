@@ -50,7 +50,7 @@ const RepositoriesPage = (props: RouteComponentProps<MatchParams>) => {
         data: [],
         error: { isError: false, message: "" },
     });
-    
+
     const usernameContext = useContext(UsernameContext);
     // sets global username based on URL path parameter
     usernameContext.setUsername!(username);
@@ -58,7 +58,7 @@ const RepositoriesPage = (props: RouteComponentProps<MatchParams>) => {
     useEffect(() => {
         if (username !== undefined) {
             fetchUserData();
-        }
+        } // eslint-disable-next-line
     }, []);
 
     const fetchUserData = async () => {

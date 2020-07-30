@@ -22,8 +22,8 @@ const UserPage = (props: RouteComponentProps<MatchParams>) => {
     useEffect(() => {
         if (username !== undefined) {
             fetchUserData();
-        }
-    }, [username]);
+        }// eslint-disable-next-line
+    }, []);
 
     const fetchUserData = async () => {
         await getUserData(username)
