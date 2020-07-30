@@ -1,0 +1,14 @@
+.searchpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.title {
+    margin: 10%;
+    text-align: center;
+}
+
+.searchbar {
+    width: 80%;
+    margin: 5% 10%;
+}
